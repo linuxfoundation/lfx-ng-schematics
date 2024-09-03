@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "$id": "lfx-ng-schematics",
+  "title": "LFX Component Lib Schema",
+  "type": "object",
+  "properties": {
+    "name": {
+      "description": "Name of the component",
+      "type": "string"
+    },
+    "path": {
+      "description": "Path to new component",
+      "type": "string",
+      "format": "path",
+      "x-prompt": "Path to new component",
+      "default": "src/app"
+    }
+  }
+}

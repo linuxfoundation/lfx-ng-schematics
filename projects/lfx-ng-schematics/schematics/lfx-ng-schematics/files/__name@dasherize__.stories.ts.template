@@ -1,0 +1,31 @@
+// Copyright The Linux Foundation and each contributor to LFX.
+// SPDX-License-Identifier: MIT
+
+import { Meta, StoryObj } from '@storybook/angular';
+import { within } from '@storybook/test';
+import { <%= classify(name) %>Component } from './<%= dasherize(name) %>.component';
+
+type Story = StoryObj<<%= classify(name) %>Component>;
+
+function getElement(canvasElement: HTMLElement): HTMLElement {
+  const canvas = within(canvasElement);
+  return canvas.getByTestId('<%= dasherize(name) %>-container');
+}
+
+// More on how to set up stories at: https://storybook.js.org/docs/writing-stories
+const meta: Meta<<%= classify(name) %>Component> = {
+  title: 'LFX Components/<%= classify(name) %>',
+  component: <%= classify(name) %>Component,
+  tags: ['autodocs'],
+  render: (args) => ({
+    template: `
+      <<%= dasherize(name) %> />
+    `,
+  })
+};
+
+export default meta;
+
+export const Default: Story = {
+  args: {},
+};

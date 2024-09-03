@@ -1,0 +1,17 @@
+{
+  "$schema": "./node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "ng-add": {
+      "description": "Add lfx-ng-schematics to your project",
+      "factory": "./ng-add/index#ngAdd"
+    },
+    "lfx-component": {
+      "description": "Generate a new LFX Component with storybook",
+      "factory": "./lfx-ng-schematics/index#lfxComponentGenerator",
+      "schema": "./lfx-ng-schematics/schema.json",
+      "aliases": [
+        "lfx-c"
+      ]
+    }
+  }
+}
