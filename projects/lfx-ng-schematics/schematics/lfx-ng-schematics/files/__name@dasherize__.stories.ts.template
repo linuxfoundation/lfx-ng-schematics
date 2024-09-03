@@ -19,7 +19,7 @@ const meta: Meta<<%= classify(name) %>Component> = {
   tags: ['autodocs'],
   render: (args) => ({
     template: `
-      <<%= dasherize(name) %> />
+      <lfx-<%= dasherize(name) %> />
     `,
   })
 };

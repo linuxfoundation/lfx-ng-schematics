@@ -1,6 +1,6 @@
 {
   "name": "lfx-ng-schematics",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "author": "adanilov",
   "scripts": {
     "build": "tsc -p tsconfig.schematics.json",
