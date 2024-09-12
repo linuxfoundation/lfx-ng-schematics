@@ -1,6 +1,6 @@
 {
   "name": "lfx-ng-schematics",
-  "version": "0.0.1",
+  "version": "0.0.7",
   "author": "adanilov",
   "scripts": {
     "ng": "ng",

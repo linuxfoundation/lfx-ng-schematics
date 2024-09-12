@@ -8,7 +8,7 @@
       "description": "Name of the component",
       "type": "string",
       "x-prompt": "Name of new component",
-      "default": "lfx-new-component"
+      "default": "new-component"
     },
     "path": {
       "description": "Path to new component",
