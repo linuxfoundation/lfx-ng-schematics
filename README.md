@@ -1,26 +1,36 @@
-# MySchematics
+# LFX NG SCHEMATICS
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.2.
+This project is designed to install the LFX Angular Schematics into an Angular project. The schematics are designed to help developers quickly create components, services, and modules that are compliant with the LFX design system.
+Ref to NG CLI documentation: `https://angular.dev/tools/cli/schematics`
 
-## Development server
+## Installation
+```
+ng add lfx-ng-schematics --registry http://localhost:4873/
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Check installed schematics
+```
+schematics lfx-ng-schematics: --list-schematics
+```
 
-## Code scaffolding
+## Usage
+```
+ng g lfx-ng-schematics:lfx-c --name test-component
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## List of schematics
 
-## Build
+|     Full name     | Alias | Description                                                   |   Params   |
+|:-----------------:|:-----:|---------------------------------------------------------------|:----------:|
+|   lfx-component   | lfx-c | Generates set of files for component including storybook file | name, path |
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Development
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```
+npm run verdaccio // start verdaccio server
+npm run build // build the schematics
+npm run publish // publish the schematics
+```
 
 ## Further help
 
